@@ -1,0 +1,20 @@
+<script>
+    import { Link } from "svelte-routing";
+    export let to = "";
+
+    function getProps({ location, href, isPartiallyCurrent, isCurrent }) {
+        const isActive = href === "/" ? isCurrent : isPartiallyCurrent || isCurrent;
+
+        // The object returned here is spread on the anchor element's attributes
+        if (isActive) {
+            return { class: "link__active" };
+        }
+        return {};
+    }
+</script>
+
+<style src="../global.scss"></style>
+
+<Link to="{to}" getProps="{getProps}">
+    <slot />
+</Link>

@@ -1,0 +1,1 @@
+<style src="../global.scss"></style>

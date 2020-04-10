@@ -1,0 +1,31 @@
+$fgColor: dodgerblue;
+$bgColor: lightblue;
+$white: white;
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    color: $fgColor;
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h2, h3, h4, h5, h6 {
+    color: $white;
+}
+
+div {
+    background: $bgColor;
+    > p {
+    color: $white;
+    }
+}
+
+.link__active {
+    font-weight: bolder;
+}
