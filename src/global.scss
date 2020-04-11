@@ -1,18 +1,25 @@
+@import "./sass/global.scss";
+
 $fgColor: dodgerblue;
 $bgColor: lightblue;
 $white: white;
+$dark: #333;
 
 html {
     font-size: 62.5%;
 }
 
+div, p, section, main, ul, li, a {
+    font-size: 1.4rem;
+}
+
 h1 {
     color: $fgColor;
-    font-size: 3rem;
+    font-size: 2.8rem;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 2.4rem;
 }
 
 h2, h3, h4, h5, h6 {
@@ -22,10 +29,10 @@ h2, h3, h4, h5, h6 {
 div {
     background: $bgColor;
     > p {
-    color: $white;
+        color: $dark;
     }
 }
 
-.link__active {
+nav a.link__active {
     font-weight: bolder;
 }

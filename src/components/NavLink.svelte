@@ -13,8 +13,6 @@
     }
 </script>
 
-<style src="../global.scss"></style>
-
 <Link to="{to}" getProps="{getProps}">
     <slot />
 </Link>
